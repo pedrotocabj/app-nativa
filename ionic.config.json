@@ -1,0 +1,7 @@
+{
+  "name": "App Nativa",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
