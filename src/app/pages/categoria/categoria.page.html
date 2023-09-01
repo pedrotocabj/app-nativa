@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>categoria</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title routerLink="/tabs/tab1" size="large">{{categoriaActual.nombre}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card *ngFor="let object of categoriaActual.productos">
+    <img alt="Silhouette of mountains" src="{{object.imagen}}" />
+    <ion-card-header>
+      <ion-card-title>{{object.nombre}}</ion-card-title>
+      <ion-card-subtitle>{{object.precio + ' U$D'}}</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>{{object.ingredientes}}</ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Categoria } from '../core/interfaces/categorias';
+import { CATEGORIAS } from '../core/constants/categorias';
+
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +10,10 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  categorias: Categoria[] = CATEGORIAS;
+
+
+
+  constructor() { }
 
 }
