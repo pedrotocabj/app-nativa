@@ -1,0 +1,55 @@
+img{
+    margin-top: 20px;
+    max-height: 250px;
+    width: 90%;
+    border: 3px solid white;
+    border-radius: 9px;
+}
+
+.componente{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    .ingredientes{
+        width: fit-content;
+        color: #ffffff;
+        border: 1px solid white;
+        padding: 3px 10px;
+        border-radius: 5px;
+    }
+    .precio{
+        background-color: green;
+        width: fit-content;
+        color: #ffffff;
+        border: 1px solid white;
+        font-weight: 700;
+        padding: 3px 10px;
+        border-radius: 5px;
+    }
+}
+
+.centrado{
+    display: flex;
+    justify-content: center;
+}
+
+ion-button{
+    color:  #ff5252;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    width: 80%;
+}
+
+ion-toolbar{
+    display: flex;
+    position: relative;
+    ion-icon{
+      width: 90px;
+      position: absolute;
+      right: 0;
+    }
+
+  }
+

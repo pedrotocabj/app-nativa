@@ -3,6 +3,7 @@ ion-card {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --background: #2d2c2c;
     --color: #ff9e9e;
+    border: 3px solid white;
   }
 
   img{
@@ -17,3 +18,17 @@ ion-card {
   ion-card-subtitle {
     --color: #ffd1d1;
   }
+
+
+
+  ion-toolbar{
+    display: flex;
+    position: relative;
+    ion-icon{
+      width: 90px;
+      position: absolute;
+      right: 0;
+    }
+
+  }
+

@@ -7,9 +7,9 @@
 <ion-content [fullscreen]="true">
   <section id="categorias-container">
     <a
-      routerLink="/categoria/1"
       *ngFor="let object of categorias"
       [ngStyle]="{'background-image':'url('+object.img+')'}"
+      [routerLink]="['/categoria',object.id]"
       >{{object.nombre}}</a
     >
   </section>
