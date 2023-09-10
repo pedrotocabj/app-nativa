@@ -1,26 +1,33 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>{{producto.nombre}}</ion-title>
+    <ion-title (click)="backClicked()">{{producto.nombre}}</ion-title>
+    <ion-icon
+      size="large"
+      name="arrow-back-circle-outline"
+      (click)="backClicked()"
+    ></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">{{producto.nombre}}</ion-title>
-      <ion-icon
-        size="large"
-        name="arrow-back-circle-outline"
-        (click)="backClicked()"
-      ></ion-icon>
+      <ion-title (click)="backClicked()" size="large"
+        >{{producto.nombre}}</ion-title
+      >
     </ion-toolbar>
   </ion-header>
-  <div class="centrado">
-    <img src="{{producto.imagen}}" />
-  </div>
   <div class="componente">
-    <p class="ingredientes">Contiene: {{producto.ingredientes}}</p>
-    <p class="precio">${{producto.precio}} USD</p>
+    <img src="{{producto.imagen}}" />
+    <ul class="ingredientes">
+      <p>Contiene:</p>
+      <li
+        *ngFor="let ingrediente of producto.ingredientes"
+      >
+      <ion-icon name="restaurant-outline"></ion-icon>{{ingrediente.toUpperCase()}}
+      </li>
+    </ul>
+    <p class="precio">Precio: ${{producto.precio}} USD</p>
   </div>
   <div class="centrado">
     <ion-button fill="outline"

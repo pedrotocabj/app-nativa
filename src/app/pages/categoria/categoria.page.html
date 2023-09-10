@@ -13,10 +13,12 @@
   <ion-card *ngFor="let object of categoriaActual.productos" [routerLink]="['/productos',object.id]">
     <img alt="Silhouette of mountains" src="{{object.imagen}}" />
     <ion-card-header>
+      <div class="primerparte">
       <ion-card-title>{{object.nombre}}</ion-card-title>
       <ion-card-subtitle>{{object.precio + ' U$D'}}</ion-card-subtitle>
+    </div>
     </ion-card-header>
 
-    <ion-card-content>{{object.ingredientes}}</ion-card-content>
+    <ion-card-content><ion-icon name="restaurant-outline"></ion-icon>{{object.ingredientes}}</ion-card-content>
   </ion-card>
 </ion-content>

@@ -1,55 +1,76 @@
-img{
-    margin-top: 20px;
-    max-height: 250px;
-    width: 90%;
-    border: 3px solid white;
-    border-radius: 9px;
+img {
+  max-height: 250px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.764);
+  width: 100%;
 }
 
-.componente{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    .ingredientes{
-        width: fit-content;
-        color: #ffffff;
-        border: 1px solid white;
-        padding: 3px 10px;
-        border-radius: 5px;
-    }
-    .precio{
-        background-color: green;
-        width: fit-content;
-        color: #ffffff;
-        border: 1px solid white;
-        font-weight: 700;
-        padding: 3px 10px;
-        border-radius: 5px;
-    }
-}
+.componente {
+  margin-top: 20px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin-left: 1em;
+  flex-wrap: wrap;
+  border: 2px solid #f0f0d8;
+  border-radius: 5px;
+  background-color: #007878 ;
+  width: calc(100% - 2em);
+  color: #f9f9e2;
 
-.centrado{
-    display: flex;
-    justify-content: center;
-}
+  .ingredientes {
+    width: fit-content;
+    padding: 3px 10px;
+    font-weight: 650;
+    border-radius: 5px;
+    height: min-content;
 
-ion-button{
-    color:  #ff5252;
-    position: absolute;
-    bottom: 50px;
-    display: flex;
-    width: 80%;
-}
-
-ion-toolbar{
-    display: flex;
-    position: relative;
-    ion-icon{
-      width: 90px;
-      position: absolute;
-      right: 0;
+    p {
+      font-size: larger;
+      margin-bottom: 8px;
     }
 
+    li {
+      font-size: large;
+      display: flex;
+      padding: 5px 0;
+      list-style: none;
+      align-items: center;
+
+      ion-icon {
+        margin-right: 7px;
+      }
+    }
   }
+  .precio {
+    width: 100%;
+    text-align: center;
+    padding-right: 30px;
+    font-weight: 650;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: larger;
+  }
+}
 
+.centrado {
+  display: flex;
+  justify-content: center;
+}
+
+ion-button {
+  color: #a8c030;
+  font-weight: 800;
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  width: 80%;
+}
+
+ion-toolbar {
+  display: flex;
+  ion-icon {
+    position: absolute;
+    right: 10px;
+    top: 25%;
+  }
+}
