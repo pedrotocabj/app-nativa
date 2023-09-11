@@ -1,13 +1,17 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title routerLink="/tabs/tab1">{{categoriaActual.nombre}}</ion-title>
+    <ion-icon
+    size="large"
+    name="arrow-back-circle-outline"
+    [routerLink]="['/tabs/tab1']" 
+  ></ion-icon>
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title routerLink="/tabs/tab1" size="large">{{categoriaActual.nombre}}</ion-title>
-      <ion-icon size="large" name="arrow-back-circle-outline" [routerLink]="['/tabs/tab1']"></ion-icon>
     </ion-toolbar>
   </ion-header>
   <ion-card *ngFor="let object of categoriaActual.productos" [routerLink]="['/productos',object.id]">

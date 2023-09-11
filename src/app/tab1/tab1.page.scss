@@ -11,10 +11,15 @@
     margin: 6px;
     background-size: cover;
     background-position: center;
-    color: rgb(255, 255, 255);
+    color: #f0f0d8;
     font-size: xx-large;
     text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
       1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
     text-align: center;
   }
+}
+
+ion-toolbar{
+  background-color: #007878;
+  color: #f0f0d8;
 }

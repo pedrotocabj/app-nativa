@@ -17,16 +17,19 @@
       >
     </ion-toolbar>
   </ion-header>
+
   <div class="componente">
     <img src="{{producto.imagen}}" />
-    <ul class="ingredientes">
+    <div class="ingredientes">
       <p>Contiene:</p>
+      <ul>
       <li
         *ngFor="let ingrediente of producto.ingredientes"
       >
       <ion-icon name="restaurant-outline"></ion-icon>{{ingrediente.toUpperCase()}}
       </li>
     </ul>
+    </div>
     <p class="precio">Precio: ${{producto.precio}} USD</p>
   </div>
   <div class="centrado">

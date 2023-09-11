@@ -67,7 +67,7 @@ export const CATEGORIAS: Categoria[] = [
   {
     nombre: 'Bebidas',
     id: 3,
-    img: 'https://estaticos-cdn.elperiodico.com/clip/dc881fa6-2138-4999-a759-75cb0b54e82f_alta-libre-aspect-ratio_default_0.jpg',
+    img: 'https://frutafiel.com.ar/files/productos/portada.png',
     productos: [
       {
         id: 7,

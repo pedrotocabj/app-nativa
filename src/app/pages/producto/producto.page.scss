@@ -17,6 +17,11 @@ img {
   width: calc(100% - 2em);
   color: #f9f9e2;
 
+  p {
+    font-size: larger;
+    margin: 8px 0 0 0;
+  }
+
   .ingredientes {
     width: fit-content;
     padding: 3px 10px;
@@ -24,10 +29,10 @@ img {
     border-radius: 5px;
     height: min-content;
 
-    p {
-      font-size: larger;
-      margin-bottom: 8px;
+    ul{
+      padding: 0;
     }
+
 
     li {
       font-size: large;
@@ -37,7 +42,7 @@ img {
       align-items: center;
 
       ion-icon {
-        margin-right: 7px;
+        margin-right: 10px;
       }
     }
   }
@@ -49,6 +54,7 @@ img {
     padding: 3px 10px;
     border-radius: 5px;
     font-size: larger;
+    margin-bottom: 10px;
   }
 }
 
@@ -68,9 +74,12 @@ ion-button {
 
 ion-toolbar {
   display: flex;
+  color: #f0f0d8;
+
   ion-icon {
     position: absolute;
     right: 10px;
-    top: 25%;
+    top: 5px;
+    color: white;
   }
 }
