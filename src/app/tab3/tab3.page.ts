@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { CarritoService } from '../core/services/carrito.service';
+import { Producto } from '../core/interfaces/productos';
 
 @Component({
   selector: 'app-tab3',
@@ -7,6 +9,19 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
-  constructor() {}
+  constructor(
+    public carritoService: CarritoService
+  ) {}
 
+  producto: Producto = {
+    id: 0,
+    nombre: '',
+    precio: 0,
+    ingredientes: [],
+    imagen: '',
+  };
+
+onVaciarCarritoClicked(){
+  this.carritoService.limpiarCarrito()
+}
 }

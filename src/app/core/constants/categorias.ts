@@ -16,19 +16,19 @@ export const CATEGORIAS: Categoria[] = [
       },
       {
         id: 2,
-        nombre: 'La del 10 insta',
-        precio: 30,
-        ingredientes: ['Messi', 'Lechuga', 'Huevo'],
-        imagen:
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkSz3ZbFtLW_0PQXfg5FoWi-45n0tvaI3Ktw&usqp=CAU',
-      },
-      {
-        id: 3,
         nombre: 'Sandwich Mila XXL',
         precio: 300,
         ingredientes: ['Milanesa', 'Lechuga', 'Tomate', 'Queso'],
         imagen:
           'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwMwDdcZVEQMkBf2FQp7ohWsVFG0mAzmEozA&usqp=CAU',
+      },
+      {
+        id: 3,
+        nombre: 'La del 10 insta',
+        precio: 30,
+        ingredientes: ['Messi', 'Lechuga', 'Huevo'],
+        imagen:
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkSz3ZbFtLW_0PQXfg5FoWi-45n0tvaI3Ktw&usqp=CAU',
       },
     ],
   },

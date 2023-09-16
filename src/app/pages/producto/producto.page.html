@@ -1,5 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-back-button></ion-back-button>
     <ion-title (click)="backClicked()">{{producto.nombre}}</ion-title>
     <ion-icon
       size="large"
@@ -33,7 +34,7 @@
     <p class="precio">Precio: ${{producto.precio}} USD</p>
   </div>
   <div class="centrado">
-    <ion-button fill="outline"
+    <ion-button fill="outline" (click)="onAgregarAlCarritoClicked()"
       >Agregar al carrito
       <ion-icon slot="end" name="cart-outline"></ion-icon>
     </ion-button>

@@ -15,7 +15,7 @@ ion-card {
   --color: #f9f9e2;
   font-weight: bold;
   border: 3px solid #f0f0d8;
-  background-color: #007878;
+  background-color: #263b3b;
 
   img {
     width: 100%;
@@ -29,7 +29,7 @@ ion-card {
   }
 
   ion-card-subtitle {
-    --color: #007878;
+    --color: #015656;
     font-weight: 900;
     border-radius: 2px;
     border: 1.8px solid white;
@@ -37,6 +37,7 @@ ion-card {
     font-size: medium;
     width: fit-content;
     padding: 5px;
+    margin: 0;
   }
 
   .primerparte {
