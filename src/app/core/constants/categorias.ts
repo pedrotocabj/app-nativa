@@ -4,7 +4,7 @@ export const CATEGORIAS: Categoria[] = [
   {
     nombre: 'Sandwiches',
     id: 1,
-    img: '../../../assets/icon/Messi-hamburguesa.jpg',
+    img: 'https://library.sportingnews.com/styles/crop_style_16_9_desktop/s3/2023-10/Sergio%20Romero%20Edinson%20Cavani%20Boca%20vs.%20Palmeiras%20100523.jpg?h=920929c4&itok=8zxHX_vN',
     productos: [
       {
         id: 1,
