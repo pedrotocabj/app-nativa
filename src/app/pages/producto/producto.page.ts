@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, OnInit, Output, inject } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CATEGORIAS } from 'src/app/core/constants/categorias';
 import { Producto } from 'src/app/core/interfaces/productos';
 import { Location } from '@angular/common';
 import { CarritoService } from 'src/app/core/services/carrito.service';
+
 
 @Component({
   selector: 'app-producto',
@@ -11,6 +12,7 @@ import { CarritoService } from 'src/app/core/services/carrito.service';
   styleUrls: ['./producto.page.scss'],
 })
 export class ProductoPage implements OnInit {
+  router = inject(Router)
   constructor(
     private activatedRoute: ActivatedRoute,
     private _location: Location,
@@ -42,9 +44,11 @@ export class ProductoPage implements OnInit {
     imagen: '',
   };
 
+  cantidad = 1;
+
   onAgregarAlCarritoClicked(){
-  this.carritoService.agregarProducto(this.producto)
+  this.carritoService.agregarProducto(this.producto, this.cantidad);
   console.log(this.carritoService.carrito);
-   
+  this.router.navigate(['tabs/tab1']);
   }
 }

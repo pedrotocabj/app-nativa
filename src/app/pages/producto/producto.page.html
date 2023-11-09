@@ -33,7 +33,7 @@
     </div>
     <p class="precio">Precio: ${{producto.precio}} USD</p>
   </div>
-  <div class="centrado">
+  <app-contador-cantidad (cantidadCambiada)="cantidad=$event"></app-contador-cantidad>  <div class="centrado">
     <ion-button fill="outline" (click)="onAgregarAlCarritoClicked()"
       >Agregar al carrito
       <ion-icon slot="end" name="cart-outline"></ion-icon>

@@ -17,11 +17,27 @@ export class CarritoService {
   carrito: Carrito[] = [];
   totalCarrito: number = 0;
 
-  agregarProducto(producto: Producto) {
-    this.carrito.push({
-      producto: producto,
-      cantidad: 1,
-    });
+  modificarCantidadProducto(idProducto:number, cantidad:number){
+    const index = this.carrito.findIndex(
+      (item) => item.producto.id === idProducto
+    );
+    if (index > -1) {
+      this.carrito[index].cantidad++;
+    }
+  }
+
+  agregarProducto(producto: Producto, cantidad: number) {
+    const index = this.carrito.findIndex(
+      (item) => item.producto.id === producto.id
+    );
+    if (index > -1) {
+      this.carrito[index].cantidad++;
+    } else {
+      this.carrito.push({
+        producto: producto,
+        cantidad: cantidad,
+      });
+    }
     this.actualizarLocalstorage();
     this.getTotal();
   }
@@ -48,5 +64,19 @@ export class CarritoService {
       this.totalCarrito =
         this.totalCarrito + item.producto.precio * item.cantidad;
     });
+  }
+
+  generarMensaje() {
+    const primeraParte = 'https://wa.me/+5412345678?text=';
+    let parteProductos = '';
+    this.carrito.forEach((itemCarrito) => {
+      parteProductos += `* ${itemCarrito.producto.nombre} - ${itemCarrito.cantidad}`;
+    });
+    const ultimaParte = `Se realizó el siguiente pedido:
+  Productos:
+  ${parteProductos}
+  Total: $${this.totalCarrito}
+  Dirección de envío: DIRECCION DE EJEMPLO`;
+    return encodeURI(primeraParte + ultimaParte);
   }
 }

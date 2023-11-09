@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { ProductoPageRoutingModule } from './producto-routing.module';
 
 import { ProductoPage } from './producto.page';
+import { ContadorCantidadComponent } from "../../core/contador-cantidad/contador-cantidad.component";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    ProductoPageRoutingModule
-  ],
-  declarations: [ProductoPage]
+    declarations: [ProductoPage],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        ProductoPageRoutingModule,
+        ContadorCantidadComponent
+    ]
 })
 export class ProductoPageModule {}
