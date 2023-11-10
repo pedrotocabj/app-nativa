@@ -17,12 +17,12 @@ export class CarritoService {
   carrito: Carrito[] = [];
   totalCarrito: number = 0;
 
-  modificarCantidadProducto(idProducto:number, cantidad:number){
+  modificarCantidadProducto(idProducto:number, cantidadACambiar:number){
     const index = this.carrito.findIndex(
       (item) => item.producto.id === idProducto
     );
     if (index > -1) {
-      this.carrito[index].cantidad++;
+      this.carrito[index].cantidad = cantidadACambiar; ;
     }
   }
 

@@ -25,6 +25,6 @@ onVaciarCarritoClicked(){
 }
 
 cambiarCantidad(cantidad:number, idProducto:number){
-  
+  this.carritoService.modificarCantidadProducto(idProducto,cantidad);
 }
 }

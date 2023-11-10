@@ -24,7 +24,7 @@ export const CATEGORIAS: Categoria[] = [
       },
       {
         id: 3,
-        nombre: 'La del 10 insta',
+        nombre: 'D10S',
         precio: 30,
         ingredientes: ['Messi', 'Lechuga', 'Huevo'],
         imagen:
@@ -48,7 +48,7 @@ export const CATEGORIAS: Categoria[] = [
 
       {
         id: 5,
-        nombre: 'La Septima 7',
+        nombre: 'AnchOas',
         precio: 77,
         ingredientes: ['Anchoas', 'Queso', 'Pepperoni'],
         imagen:
@@ -71,17 +71,17 @@ export const CATEGORIAS: Categoria[] = [
     productos: [
       {
         id: 7,
-        nombre: 'Charly Champagne',
-        precio: 5000,
-        ingredientes: ['Charly Garcia'],
+        nombre: 'Champagne',
+        precio: 300,
+        ingredientes: ['Chandon'],
         imagen:
           '../../../../assets/icon/Charly.avif',
       },
       {
         id: 8,
-        nombre: 'Coke',
+        nombre: 'Coca',
         precio: 5,
-        ingredientes: ['Quimicos'],
+        ingredientes: ['Coca-cola'],
         imagen:
           'https://img.asmedia.epimg.net/resizer/Gynl6zGFUYeYNeK5lIqWwU84kP4=/1472x828/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/DSWLWJ7BVJD25JQT7YTRI63ES4.jpg',
       },
@@ -102,7 +102,7 @@ export const CATEGORIAS: Categoria[] = [
     productos: [
       {
         id: 10,
-        nombre: 'Menta graniGod',
+        nombre: 'Menta granizada',
         precio: 30,
         ingredientes: ['Menta', 'Chocolate'],
         imagen:
@@ -112,13 +112,13 @@ export const CATEGORIAS: Categoria[] = [
         id: 11,
         nombre: 'Helado Vegano',
         precio: 30,
-        ingredientes: ['Nada', 'Hielo'],
+        ingredientes: ['Hielo'],
         imagen:
           'https://images3.memedroid.com/images/UPLOADED26/64ef87c48b76c.jpeg',
       },
       {
         id:12,
-        nombre:'Colo Barco',
+        nombre:'Frutilla',
         precio:10,
         ingredientes:['Frutilla','Crema'],
         imagen:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1AE476nuc0r4Iqsc7sgYOvos5nwoRvMD39A&usqp=CAU"
