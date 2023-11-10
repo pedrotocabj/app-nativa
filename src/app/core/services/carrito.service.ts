@@ -24,11 +24,13 @@ export class CarritoService {
     if (index > -1) {
       this.carrito[index].cantidad = cantidadACambiar; ;
     }
+    this.actualizarLocalstorage(); 
+    this.getTotal();
   }
 
   agregarProducto(producto: Producto, cantidad: number) {
     const index = this.carrito.findIndex(
-      (item) => item.producto.id === producto.id
+      item => item.producto.id === producto.id
     );
     if (index > -1) {
       this.carrito[index].cantidad++;
